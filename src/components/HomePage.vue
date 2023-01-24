@@ -24,7 +24,7 @@
 const obterPokemonList = () => {
   const url = id => `https://pokeapi.co/api/v2/pokemon/${id}`
   const listaPromeses = []
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 30; i++) {
     listaPromeses.push(
       fetch(url(i))
         .then(response => response.json())
